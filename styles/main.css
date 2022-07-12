@@ -36,7 +36,6 @@ button {
     padding: 0.875rem;
     font-family: var(--Lexend-family);
     font-weight: 400;
-    /* font-size: 1rem; */
     text-transform: capitalize;
     margin-top: auto;
 }
@@ -112,7 +111,6 @@ h1 {
 p {
     font-family: var(--Lexend-family);
     color: var(--Transparent-white);
-    /* font-size: 0.9375rem; */
     margin-bottom: 5.3125rem;
     text-align: left;
     font-weight: 400;
