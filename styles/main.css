@@ -1,0 +1,189 @@
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    --Very-light-gray: hsl(0, 0%, 95%);
+    --BS-font: 'Big Shoulders Display', cursive;
+    --Lexend-family: 'Lexend', sans-serif;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    display: grid;
+    grid-template-rows: 1fr 40px;
+    align-items: center;
+    justify-content: center;
+    padding-inline: 1rem;
+    font-size: 0.9375rem;
+}
+
+button {
+    background: var(--Very-light-gray);
+    border-radius: 1.5625rem;
+    border: none;
+    outline: none;
+    width: 9.375rem;
+    padding: 0.875rem;
+    font-family: var(--Lexend-family);
+    font-weight: 400;
+    /* font-size: 1rem; */
+    text-transform: capitalize;
+    margin-top: auto;
+}
+
+
+@media screen and (max-width: 700px) {
+    .container {
+        margin: 5.625rem auto;
+    }
+
+    .container-1 {
+        border-top-left-radius: 0.625rem;
+        border-top-right-radius: 0.625rem;
+    }
+
+    .container-3 {
+        border-bottom-left-radius: 0.625rem;
+        border-bottom-right-radius: 0.625rem;
+
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+
+    .container-1 {
+        border-top-left-radius: 0.625rem;
+        border-bottom-left-radius: 0.625rem;
+    }
+
+    .container-3 {
+        border-top-right-radius: 0.625rem;
+        border-bottom-right-radius: 0.625rem;
+    }
+
+    .attribution {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+    }
+
+}
+
+.container-1,
+.container-2,
+.container-3 {
+    display: flex;
+    flex-direction: column;
+    height: 31.25rem;
+    width: 19.0625rem;
+    padding: 3rem;
+}
+
+img {
+    width: 4.6875rem;
+    height: 2.81255rem;
+    margin-bottom: auto;
+}
+
+h1 {
+    text-transform: uppercase;
+    color: var(--Very-light-gray);
+    font-family: var(--BS-font);
+    font-weight: 700;
+    margin: 2.25rem 0;
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: var(--Lexend-family);
+    color: var(--Transparent-white);
+    /* font-size: 0.9375rem; */
+    margin-bottom: 5.3125rem;
+    text-align: left;
+    font-weight: 400;
+}
+
+/* =============================== */
+.container-1 {
+    background: hsl(31, 77%, 52%);
+    padding: 3.0625rem;
+}
+
+.container-1 button {
+    color: var(--Bright-orange);
+
+}
+
+.container-1 button:hover {
+    cursor: pointer;
+    background: var(--Bright-orange);
+    color: var(--Very-light-gray);
+    border: var(--Very-light-gray) solid 0.125rem;
+}
+
+/* end of container one */
+/* ==================================== */
+
+.container-2 {
+    background: hsl(184, 100%, 22%);
+}
+
+.container-2 button {
+    color: var(--Dark-cyan);
+}
+
+.container-2 button:hover {
+    cursor: pointer;
+    background: var(--Dark-cyan);
+    color: var(--Very-light-gray);
+    border: var(--Very-light-gray) solid 0.125rem;
+}
+
+/* end of container two */
+/* ==================================== */
+
+.container-3 {
+    background: hsl(179, 100%, 13%);
+
+}
+
+.container-3 button {
+    color: var(--Very-dark-cyan);
+}
+
+.container-3 button:hover {
+    cursor: pointer;
+    background: var(--Very-Dark-cyan);
+    color: var(--Very-light-gray);
+    border: var(--Very-light-gray) solid 0.125rem;
+}
+
+/* end of container three */
+/* ==================================== */
+
+
+.attribution {
+    font-size: 0.8125rem;
+    text-align: center;
+}
+
+.attribution a,
+.attribution a:visited {
+    color: hsl(228, 45%, 44%);
+    text-decoration: none;
+}
